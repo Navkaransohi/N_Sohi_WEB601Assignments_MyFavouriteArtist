@@ -1,0 +1,8 @@
+<p>content-card works!</p>
+<!-- src/app/content-card/content-card.component.html -->
+<!-- src/app/content-card/content-card.component.html -->
+<div *NgFor="let contentItem of contentList.content">
+    <div [innerHTML]="contentList.getContentAtIndexHtml(contentList.content.indexOf(contentItem))"></div>
+  </div>
+  
+  
